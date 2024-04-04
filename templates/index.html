@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <script src="{{ url_for('static',filename='scripts/jquery.js') }}"></script>
+    <script src="{{ url_for('static',filename='scripts/script.js') }}"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="value" id="cam1_value">{{cam1_iris}}</div>
+            <input type="range" min="0" max="26" value="{{cam1_iris}}" step="1" id="cam1_iris"/>
+            <div class="value" id="cam2_value">{{cam2_iris}}</div>
+            <input type="range" min="0" max="26" value="{{cam2_iris}}" step="1" id="cam2_iris"/>
+            <div class="value" id="cam3_value">{{cam3_iris}}</div>
+            <input type="range" min="0" max="26" value="{{cam3_iris}}" step="1" id="cam3_iris"/>
+            <div class="value" id="cam4_value">{{cam4_iris}}</div>
+            <input type="range" min="0" max="26" value="{{cam4_iris}}" step="1" id="cam4_iris"/>
+          </div>
+    </main>
+</body>
